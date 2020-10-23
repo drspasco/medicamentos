@@ -1,0 +1,61 @@
+<!--{% load static %}-->
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DIRESA-PASCO</title>
+    <meta name="description" content="Reporteador DIRESA-PASCO">
+	<meta name="keywords" content="DIRESA, Pasco, Cerro de Pasco">
+	<link rel="shortcut icon" href="https://diresapasco.gob.pe/diresa-pasco/Medicamentos/static/IMG/logo.jpg">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	<!--<link rel="shortcut icon" href="{% static 'ICONOS/chevron-down-outline.svg' %}">-->
+	<link rel="stylesheet" href="https://diresapasco.gob.pe/diresa-pasco/Medicamentos/static/report.css" media="screen, handheld">
+  
+</head>
+<body>
+<header>
+	<div class="cajaencabezado">
+        <div class="caja cajalogo">
+            <img class="logo" src="https://diresapasco.gob.pe/diresa-pasco/Medicamentos/static/IMG/logo.jpg">
+            <div class="cajalogo">
+                <div class="cajanombre">
+                    <span>DIRESA - PASCO</span>
+                </div>
+            </div>
+        </div>
+        <!--{% block login %}-->
+        <div class="cajaingreso">
+            <div class="cajainicio">
+                <a class="botini" href="http://127.0.0.1:8000/acceso/"><img class="logoinicio" src="https://diresapasco.gob.pe/diresa-pasco/Medicamentos/static/IMG/login.png">Inicio</a>
+            </div>
+        </div>
+        <!--{% endblock login %}-->
+	</div>
+</header>
+<nav>
+    <ul>
+        <li><a href="#" class="menunavegador">INICIO</a></li>
+        <li><a href="#" class="menunavegador">INDICADORES</a>
+            <!--<ion-icon name="chevron-down-circle-outline" color="primary"></ion-icon>-->
+            <ul>
+                <!--<ion-icon name="chevron-down-circle-outline" style="--ionicon-color-primary= blue;"></ion-icon>-->
+                <li><a href="#" class="menunavegador">FED</a></li>
+                <li><a href="#" class="menunavegador">PAMAR</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="menunavegador">REPORTES</a></li>
+        <li><a href="#" class="menunavegador">CAPACITACIONES</a></li>
+    </ul>
+</nav>
+<!--{% block seccion %}-->
+<div class="cajacuerpo">
+	<img class="imgcuerpo" src="https://diresapasco.gob.pe/diresa-pasco/Medicamentos/static/IMG/LogoOEIT.jpeg">
+
+
+</div>
+<!--{% endblock seccion %}-->
+<footer>
+    <p>Iconos dise単os por <a href="https://www.flaticon.es/autores/dmitri13" title="dmitri13">dmitri13</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a></p>
+</footer>
+</body>
+</html>
